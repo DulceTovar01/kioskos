@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title> Winning Temp</title>
+    <style>
+        #fondo {
+            background: url(imagenes/fondoTitanX.png);
+        }
+
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 490px);
+            /* Crear 3 columnas con el mismo ancho */
+            grid-template-rows: 135px;
+            /* Crear 3 columnas con el mismo ancho */
+            /* gap: 5px;  Espacio entre columnas */
+            padding: 20px;
+            /* Espacio interno del contenedor */
+        }
+
+        .item {
+            background: white;
+            opacity: 80%;
+            color: white;
+            padding: 1em;
+        }
+
+        #logo {
+            max-width: 500px;
+            height: 70px;
+
+        }
+
+        #app {
+            max-width: 380px;
+            height: 40px;
+            padding-left: 4em;
+
+        }
+
+        iframe {
+            width: 100%;
+            height: calc(100vh - 135px - 20px);
+            /* Calcula el 100% de la altura de la ventana gráfica, restando la altura del encabezado y el margen del contenedor */
+            border: none;
+            /* Elimina el borde del iframe */
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .btnHome {
+
+            width: 150px;
+            height: 80px;
+            font-size: 20px;
+            /* Tamaño de la fuente más grande */
+            font-weight: bold;
+            /* Texto en negrita */
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body id="fondo">
+
+    <div class="container">
+
+        <div class="item">Item 1</div> <!-- cada uno de los ítems del grid -->
+        <div class="item">Item 2
+            <img id="logo" src="imagenes/logoTitanX.png" alt="Logo TitanX">
+            <img id="app" src="imagenes/aplicaciones.png" alt="Aplicaciones TitanX">
+        </div>
+        <div class="item">Item 3</div>
+
+    </div>
+    </div>
+
+    <div>
+        <a href="index.html">
+        <button class="btnHome" type="submit">Home</button> </a><br>
+    </div><br>
+
+    <iframe src="https://checkin.winningtemp.com/titanx-engagement" rel="noopener noreferrer"></iframe>
+
+
+</body>
+
+</html>

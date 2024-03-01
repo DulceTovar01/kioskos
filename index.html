@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--lang="es" lenguage asignado en español -->
+
+<head>
+
+  <title> Aplicaciones</title>
+
+  <style>
+    h2 {
+      color: greenyellow;
+    }
+
+    #fondo {
+      background: url(imagenes/fondoTitanX.png);
+    }
+
+
+    #logo {
+      max-width: 500px;
+      height: 70px;
+
+    }
+
+    #app {
+      max-width: 380px;
+      height: 40px;
+      padding-left: 4em;
+
+    }
+
+    #wt {
+      max-width: 500px;
+      height: 320px;
+     
+    }
+
+    #xs {
+      max-width: 500px;
+      height: 330px;
+    }
+
+    #xr {
+      max-width: 380px;
+      height: 120px;
+      padding-left: 1em;
+
+    }
+
+    #Intra {
+      font-size: 30px;
+      /* Tamaño de la fuente más grande */
+      font-weight: bold;
+      /* Texto en negrita */
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #textBtn {
+      font-size: 20px;
+      /* Tamaño de la fuente más grande */
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 490px);
+      /* Crear 3 columnas con el mismo ancho */
+      grid-template-rows: 135px;
+      /* Crear 3 columnas con el mismo ancho */
+      /* gap: 5px;  Espacio entre columnas */
+      padding: 20px;
+      /* Espacio interno del contenedor */
+    }
+
+    .item {
+      background: white;
+      opacity: 80%;
+      color: white;
+      padding: 1em;
+    }
+
+    .container-buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 300px 300px;
+      gap: 5px;
+      /* gap: 5px;  Espacio entre columnas */
+      /*padding: 20px;
+      /* Espacio interno del contenedor */
+
+    }
+
+    .item-b {
+      /* background: black;*/
+      opacity: 85%;
+      color: white;
+      /*padding: 1em;*/
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      /*align-items: center;*/
+    }
+
+    .buttonWT {
+      width: 280px;
+      height: 270px;
+      padding: 10px 20px;
+      /* background-color: white;*/
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      padding-left: 5em;
+    }
+
+    .buttonWT img {
+      max-width: 100%;
+      height: auto;
+      padding-top: 100px;
+      /* margin-top: 10px; /* Ajusta según sea necesario */
+    }
+
+    .buttonXS {
+      width: 380px;
+      height: 170px;
+      padding: 10px 20px;
+      /* background-color: white;*/
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .buttonXS img {
+      max-width: 100%;
+      height: auto;
+      padding-top: 110px;
+      /* margin-top: 10px; /* Ajusta según sea necesario */
+    }
+
+    .buttonXR {
+      width: 380px;
+      height: 170px;
+      padding: 10px 20px;
+      /* background-color: white;*/
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .buttonXR img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 100px;
+      /* Ajusta según sea necesario */
+    }
+  </style>
+
+
+</head>
+
+<!--padding-top: 0;
+      padding-right: 30px;
+      padding-bottom: 40px;
+      padding-left: 35em;
+    
+       <img id="logo" src="imagenes/logoTitanX.png" alt="Logo TitanX">
+      <img id="app" src="imagenes/aplicaciones.png" alt="Aplicaciones TitanX">
+    
+      padding-top: 0;
+      padding-right: 30px;
+      padding-bottom: 100px;
+      padding-left: 40em;
+
+      padding-top: 0px;
+      padding-left: 37em;
+      padding-bottom: 50px;
+
+          #main-header {
+	    background: white;
+	    color: white;
+      opacity: 80%;
+	    height: 150px;
+    }	
+    -->
+
+<body id="fondo">
+
+  <div>
+
+    <div class="container">
+
+      <div class="item">Item 1</div> <!-- cada uno de los ítems del grid -->
+      <div class="item">Item 2
+        <img id="logo" src="imagenes/logoTitanX.png" alt="Logo TitanX">
+        <img id="app" src="imagenes/aplicaciones.png" alt="Aplicaciones TitanX">
+      </div>
+      <div class="item">Item 3</div>
+
+    </div>
+
+    <!-- <header id="main-header"></header>
+    </header> / #main-header -->
+
+    <div>
+      <main>
+
+        <div class="container-buttons">
+          <div class="item-b">
+            
+            <div class="button-container">
+              <a href="Xpresa.html"
+                rel="noopener noreferrer" class="buttonXS"><img id="xs" src="imagenes/Xpressa.png">
+
+              </a>
+            </div>
+
+          </div> <!-- cada uno de los ítems del grid -->
+          <div class="item-b">
+
+            <div class="button-container">
+              <a href="WinningTemp.html" rel="noopener noreferrer" class="buttonWT">
+                <img id="wt" src="imagenes/WinningTemp.png">
+              </a>
+            </div>
+          </div>
+          <div class="item-b">
+          
+            
+
+          </div>
+          <div class="item-b"></div>
+        </div>
+
+        <!----------------------------------------- enlaces externos a otras paginas--------------------------------------->
+        <!-- a es ls creacion de enlaces, y href el destino de la direccion -->
+        <!-- target="blank" es para que el enlace se abra en otra pestaña y no en la misma, 
+      rel="noopener noreferrer" es usado por motivos de seguridad para evitar que la página enlazada 
+      acceda a los datos de uso, prevencion de ataques-->
+
+
+        <!--------------------------------------------Imagenes en enlaces------------------------------------------------->
+
+        <div>
+          <!------------------------------------------------- Linea horizontal-------------------------------------->
+
+
+        </div>
+    </div>
+
+    <!--  <iframe src="https://checkin.winningtemp.com/titanx-engagement"></iframe>-->
+
+  </div>
+  </main>
+
+</body>
+</html>
