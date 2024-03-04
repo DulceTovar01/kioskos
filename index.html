@@ -13,6 +13,9 @@
 
     #fondo {
       background: url(imagenes/fondoTitanX.png);
+      background-size: cover; /* Ajusta el tamaño para cubrir completamente */
+  height: 100%; /* Asegura que el fondo ocupe toda la altura de la pantalla */
+  margin: 0;
     }
 
 
@@ -65,12 +68,12 @@
 
     .container {
       display: grid;
-      grid-template-columns: repeat(3, 490px);
+      grid-template-columns: repeat(3, 500px);
       /* Crear 3 columnas con el mismo ancho */
       grid-template-rows: 135px;
       /* Crear 3 columnas con el mismo ancho */
       /* gap: 5px;  Espacio entre columnas */
-      padding: 20px;
+      padding: 10px;
       /* Espacio interno del contenedor */
     }
 
@@ -83,8 +86,8 @@
 
     .container-buttons {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 300px 300px;
+      grid-template-columns: 700px 700px;
+      grid-template-rows: 260px 260px;
       gap: 5px;
       /* gap: 5px;  Espacio entre columnas */
       /*padding: 20px;
@@ -236,12 +239,6 @@
               </a>
             </div>
           </div>
-          <div class="item-b">
-          
-            
-
-          </div>
-          <div class="item-b"></div>
         </div>
 
         <!----------------------------------------- enlaces externos a otras paginas--------------------------------------->
